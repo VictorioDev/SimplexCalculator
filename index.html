@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Simplex Calculator</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/math.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                    <h1>Calculadora Simplex</h1><p>(Beta)</p>
+            </div>
+            
+
+            <div id="main">
+                    <div class="row">
+                        <label  for="numvar">Número de variáveis:</label>
+                        <input name="numvar" id="numvar" type="number" required>
+                    </div>
+                    <div class="row">
+                      <label  for="numres">Número de restrições:</label>
+                      <input name="numres" id="numres" type="number" required>
+                    </div>
+                    <div class="row">
+                        <button type="submit" onclick="generateInputs()">Inserir valores</button>
+                    </div>            
+                <div id="generated-content">
+
+                </div>
+
+                <div class="row btn">
+                    <button type="submit" class="hidden" id="calc" onclick="computeValues()">Calcular</button>
+                </div>
+
+                
+                <!--div class="row display-column"<p>Função:</p><input type="number" id="x"><p>X1</p -->
+            </div> <!-- Fim div main -->
+        </div><!-- Fim div wrapper -->
+        
+
+    </body>
+</html>
