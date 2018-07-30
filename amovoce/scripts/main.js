@@ -1,9 +1,10 @@
+var img;
+
 function setup() {
     createCanvas(displayWidth, displayHeight);
+    img = loadImage('assets/sadboy.jpg');
 }
 
 function draw() {
-    background(0);
-    fill(255);
-    ellipse(width/2, height/2, 100, 100);
+    image(img, 0, 0);
 }
